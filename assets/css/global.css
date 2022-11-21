@@ -4,14 +4,46 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-image: url(/image/Primeira\ cidade.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.autor {
+    
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 1rem;
+}
+
+.autor button {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #fa0000;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.logo {
+    margin-bottom: 0%;
 }
 
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+    background-color: rgba(224, 222, 222, 0.5);
+    text-align: center;
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -20,5 +52,15 @@ body {
         height: auto;
         margin: 1rem auto;
         border-radius: 1rem;
+        background-size: 25%;
+        background-position: 110% -60px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .content {
+        
+        background-size: 200px;
+        background-position: 150% -40px;
     }
 }
